@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./style.css";
 import Header from "../Header";
+import PenguinList from "../PenguinList";
 
 export default function PenguinPage() {
   const baseUrl = "http://localhost:5000/";
@@ -28,35 +29,7 @@ export default function PenguinPage() {
           <h1>Meet the penguins roaming our world</h1>
         </div>
 
-        <div className="profile-feed">
-          {penguins.map((penguin, index) => (
-            <li key={index} className="profile-li">
-              <div className="profile-container">
-                <div className="profile-img">
-
-                {console.log(penguin.pictureUrl)}
-                <img src={penguin.pictureUrl} alt="penguin" />
-                </div>
-
-                <div className="profile-info">
-                  {penguin ? <p>{"Name: " + penguin.username}</p> : <p>?</p>}
-                  {penguin ? (
-                    <p>{"First appearence: " + penguin.firstAppearance}</p>
-                  ) : (
-                    <p>?</p>
-                  )}
-                  {penguin ? (
-                    <p>
-                      {"Most Recent Giveaway: " + penguin.mostRecentGiveaway}
-                    </p>
-                  ) : (
-                    <p>?</p>
-                  )}
-                </div>
-              </div>
-            </li>
-          ))}
-        </div>
+        <PenguinList penguins={penguins} /> 
       </div>
     </>
   );

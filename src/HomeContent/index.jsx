@@ -46,7 +46,7 @@ export default function HomeContent() {
                 alt=""
               />
             </div>
-            <h2>This is the Villains</h2>
+            <h2>Watch out for the villains</h2>
             <p>
               Quick guide of all villains you might encounter on your journeys.
             </p>
