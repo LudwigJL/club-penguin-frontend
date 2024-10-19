@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import "./style.css";
+import Header from "../Header";
 
 export default function PenguinPage() {
   const baseUrl = "http://localhost:5000/";
@@ -21,29 +21,7 @@ export default function PenguinPage() {
 
   return (
     <>
-      <header>
-        <div className="logo-image">
-          <img
-            src="https://cdn.prod.website-files.com/631c05c192aded085d20e9e8/632ad06579b9d3fb62347ccc_logo-p-500.png"
-            alt=""
-          />
-        </div>
-        <nav>
-          <ul className="nav-links">
-            <div className="link-container">
-              <Link className="link" to={"/penguins"}>
-                Explore the penguins!
-              </Link>
-            </div>
-
-            <div className="link-container">
-              <Link to={"/rooms"} className="link">
-                See what is happening in some of our rooms!
-              </Link>
-            </div>
-          </ul>
-        </nav>
-      </header>
+      <Header />
 
       <div className="page-body">
         <div className="title-container">
