@@ -26,6 +26,10 @@ header {
     height: 100px;
 }
 
+.link-img {
+    width: 150px;
+}
+
 img {
     max-width: 100%;
     max-height: 100%;
@@ -38,7 +42,7 @@ img {
 }
 
 .link-container {
-    background-color: rgb(245, 217, 55);
+    background-color: rgb(255,167,27);
     padding: 10px;
     border-radius: 20px;
     margin: 0px 20px   
@@ -50,7 +54,10 @@ img {
     transition: all 0.3s ease 0s;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.946);
-    color: rgb(18, 22, 70);
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+
+    font-weight: 500;
 }
 
 .link:hover {
@@ -72,7 +79,9 @@ img {
 }
 
 .content-container {
+    border-radius: 10px;
     display: flex;
+    flex-direction: row;
     align-items: center;
     width: 75%;
     height: 400px;
@@ -80,6 +89,51 @@ img {
     color: black;
 }
 
+.content-post-container {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    width: 325px;
+}
+
+.content-container h2 {
+    color: #29a0ed;
+    background-color: white;
+}
+
+.content-container p {
+    color: #686767;
+    background-color: white;
+}
+.image-container {
+    background-color: white;
+}
+
+.content-container img {
+    background-color: white;
+    border-radius: 20px;
+}
+
+.content-button {
+    margin-top: 5px;
+    color: #01539c;
+    background-image: linear-gradient(#fff, #a4daff);
+    border: 1px solid #8dbeff;
+    border-radius: 6px;
+    font-family: 'Burbank Small', sans-serif;
+    font-weight: 700;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .content-button:hover {
+    background-color: #a4daff;
+  }
+  
 
 
 .web-end {
